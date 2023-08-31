@@ -76,7 +76,7 @@ console.log(mensagem(pessoa))
 //b
 const pessoa2 = {...pessoa, apelidos:["niño", "Alex", "Tito"]}
 console.log(mensagem(pessoa2)) 
-*/
+
 
 
 //2- 
@@ -100,3 +100,32 @@ function funcao1 (objeto) {
 
 console.log(funcao1(objeto1))
 console.log(funcao1(objeto2))
+*/
+
+//3-
+
+const carrinho = []
+
+const frutas1 = {
+    nome: "banana", 
+    disponibilidade: false,
+}
+
+const frutas2 = {
+    nome: "manga", 
+    disponibilidade: true,
+}
+const frutas3 = {
+    nome: "maca", 
+    disponibilidade: true,
+}
+
+function funcao(fruta){
+    carrinho.push(fruta)
+}
+
+funcao(frutas1)
+funcao(frutas2)
+funcao(frutas3)
+
+console.log(carrinho)
